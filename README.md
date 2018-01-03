@@ -1,4 +1,4 @@
-#README
+# JavaAlgorithm
 ##Chapter1 基本算法及数据结构
 1. BinaryTree  二叉树
 2. LinkedList 链表
@@ -36,4 +36,4 @@
          }
          return re;
      }
- ```
+ ```# JavaAlgorithm
