@@ -1,5 +1,5 @@
 # JavaAlgorithm
-##Chapter1 基本算法及数据结构
+Chapter1 基本算法及数据结构
 1. BinaryTree  二叉树
 2. LinkedList 链表
 3. Queue    队列
@@ -8,7 +8,7 @@
 6. Graph.java 图
 
 
-##chapter2 常用算法思想
+chapter2 常用算法思想
 1. 穷举算法思想 Exhaustive Attack Method
  - 从所有可能的情况中搜索正确答案
  >(1) 对于一种可能的情况，计算其结果。
@@ -36,4 +36,4 @@
          }
          return re;
      }
- ```# JavaAlgorithm
+
