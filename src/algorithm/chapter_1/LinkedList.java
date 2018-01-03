@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.chapter_1;
 
 /**
  * Created by baymux on 2017/12/12.
