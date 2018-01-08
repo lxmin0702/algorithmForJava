@@ -1,11 +1,17 @@
 # JavaAlgorithm
 ## Chapter1 基本算法及数据结构
 1. BinaryTree  二叉树
+    https://github.com/baymux/JavaAlgorithm/blob/master/src/algorithm/chapter1/BinaryTree.java
 2. LinkedList 链表
+    https://github.com/baymux/JavaAlgorithm/blob/master/src/algorithm/chapter1/LinkedList.java
 3. Queue    队列
+     https://github.com/baymux/JavaAlgorithm/blob/master/src/algorithm/chapter1/Queue.java
 4. SeqList  顺序表
+    https://github.com/baymux/JavaAlgorithm/blob/master/src/algorithm/chapter1/SeqList.java
 5. Stack    栈
+    https://github.com/baymux/JavaAlgorithm/blob/master/src/algorithm/chapter1/Stack.java
 6. Graph.java 图
+    https://github.com/baymux/JavaAlgorithm/blob/master/src/algorithm/chapter1/Graph.java
 
 
 ## chapter2 常用算法思想
@@ -17,6 +23,7 @@
  - 使用穷举法首先确定范围，确定范围之后，可以使用循环语句及条件判断语句验证大拿正确性，从而得到正确的答案。
  - 穷举算法例子：
     今有鸡兔同笼上有三十五头，下有九十四足，问鸡兔各何？
+    https://github.com/baymux/JavaAlgorithm/blob/master/src/algorithm/chapter2/Exhaustive.java
  ```
      /**
       * 穷举算法
@@ -52,6 +59,7 @@ Q: 一对两个月大的兔子以后每一个月都可以生一对小兔子，�
  第四个月：3对  
  第五个月：5对  
  ...
+    https://github.com/baymux/JavaAlgorithm/blob/master/src/algorithm/chapter2/Recursion.java  
  ```
      /**
       * 递归
@@ -82,6 +90,7 @@ Q: 一对两个月大的兔子以后每一个月都可以生一对小兔子，�
     阶乘，n! = n*(n-1)* (n-2)* ... * 2* 1  
          (n-1)! = (n-1)* (n-2)* ... * 2*1  
          n! = n * (n-1)! 
+    https://github.com/baymux/JavaAlgorithm/blob/master/src/algorithm/chapter2/RecursionDigui.java
 ```
     /**
      * 求阶乘方法
@@ -97,3 +106,14 @@ Q: 一对两个月大的兔子以后每一个月都可以生一对小兔子，�
         }
     }
 ```  
+4. 分治算法思想
+  分治算法(Divide and conquer algorithm)是一种化繁为简的算法，将复杂问题简化。  
+- 执行过程  
+    (1) 对于一个规模为N的问题，如果该问题很容易的解决(规模比较小)，则直接解决，否则执行下面步骤。    
+    (2) 将该问题分解为M个规模较小的子问题，这些问题相互独立，与原问题形式相同。  
+    (3) 递归解决这些子问题。  
+    (4) 然后将各子问题的解合并到原问题的解。  
+- 分治算法实例
+    一个袋子有三十个硬币，其中有一个假币，其中假币和真币一摸一样，只知道假币比真币分量轻一些，如何区分出假币？  
+    https://github.com/baymux/JavaAlgorithm/blob/master/src/algorithm/chapter2/Divided.java
+    
