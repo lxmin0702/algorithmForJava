@@ -181,3 +181,35 @@ Q: 一对两个月大的兔子以后每一个月都可以生一对小兔子，�
     }
 
 ```
+5. [概率算法基本思想 Probability algorithm](https://github.com/baymux/JavaAlgorithm/blob/master/src/algorithm/chapter2/Probability.java)  
+  概率算法按照概率统计的思虑来求解问题，往往不能得到问题的精确解，只能求得近似值。  
+- 执行过程  
+    (1) 将问题转化为相应的集合图形S，S的面积是容易计算的，问题的结果往往对应集合图形S的某一部分面积S1的面积。  
+    (2) 然后向集合图形中随机撒点。  
+    (3) 统计几何图形S和S1的点数。根据S的面积和S1的面积的关系以及各图中的点数来计算得到结果。
+    (4) 判断结果是是否在精确度之内，如未达到精确度，执行(2), 如达到精确度，则输出结果。
+- 概率算法实例：
+   蒙特卡罗π算法思想(Monte carlo)  
+```
+    /**
+     * 蒙特卡罗算法
+     * @param n
+     * @return
+     */
+    static double MontePI(int n){
+        double PI;
+        double x, y;
+        int i, sum;
+        sum = 0;
+
+        for (i=0; i < n; i++){
+            x = Math.random();
+            y = Math.random();
+            if ((x*x+ y*y) <= 1) {
+                sum++;
+            }
+        }
+        PI = 4.0 * sum / n;
+        return PI;
+    }
+```
