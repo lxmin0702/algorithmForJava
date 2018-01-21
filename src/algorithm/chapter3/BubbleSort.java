@@ -12,7 +12,7 @@ public class BubbleSort {
         int temp;
         for (int i=1; i<a.length; i++){
             for (int j=0; j<a.length-i; j++){
-                // 将相邻两个数进行比较，较大的书往后冒泡
+                // 将相邻两个数进行比较，较大的数往后冒泡
                 if (a[j] > a[j+1]){
                     // 交换相邻的两个数
                     temp = a[j];
