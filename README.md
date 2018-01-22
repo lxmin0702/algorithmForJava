@@ -250,3 +250,36 @@ Q: 一对两个月大的兔子以后每一个月都可以生一对小兔子，�
         }
     }
 ```
+2. [选择排序法 Selection Sort](https://github.com/baymux/JavaAlgorithm/blob/master/src/algorithm/chapter3/SelectionSort.java)
+- 思路: 选择排序是在每一步中选取最小值来重新排列，从而达到排序的目的。
+- 排序流程  
+  (1) 首先从原始数组中选取最小的一个数据，将其和位于第1个位置的数据进行交换。  
+  (2) 接着从剩下的n-1个数据中选取此小的一个数据，将其与第二个数据互换。  
+  (3) 由此依次交换，直到最后两个数据完成交换。  
+- 选择排序实例  
+ ![图3-3 选择排序](https://github.com/baymux/JavaAlgorithm/blob/master/imgs/选择排序.jpg)
+```java 
+    public static void selectSort(int[] a){
+        int index, temp;
+        for (int i=0; i<a.length; i++){
+            index = i;
+            for (int j=i+1; j<a.length; j++){
+                if (a[j] < a[index]){
+                    index = j;
+                }
+            }
+            // 交换两个数
+            if (index != i){
+                temp = a[i];
+                a[i] = a[index];
+                a[index] = temp;
+            }
+            System.out.println("第" + i + "步的排序结果为：");
+            for (int h=0; h<a.length; h++){
+                System.out.print(" " + a[h]);
+            }
+            System.out.println();
+        }
+    }
+```
+ 
