@@ -47,7 +47,7 @@ public class SelectionSort {
 
         System.out.println("排序后的数组为：");
         for (i=0; i<SIZE; i++){
-            System.out.println(" " + array[i]);
+            System.out.print(" " + array[i]);
         }
         System.out.println();
     }
