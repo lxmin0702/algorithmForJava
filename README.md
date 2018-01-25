@@ -282,4 +282,34 @@ Q: 一对两个月大的兔子以后每一个月都可以生一对小兔子，�
         }
     }
 ```
+3. [插入排序法 InsertionSort](https://github.com/baymux/JavaAlgorithm/blob/master/src/algorithm/chapter3/InsertionSort.java)   
+- 思路：通过对未排序的数据执行诸葛插入至合适位置而完成排序工作。
+- 排序流程：  
+  (1) 首先对数组的前两个数据进行从大到小的排序。  
+  (2) 接着将第三个数据与排序好的前两个数据进行比较，将第三个数据插入至合适的位置。  
+  (3) 然后将第四个数据插入到以好的前三个数据中。  
+  (4) 不断重读上述过程，直到把最后一个数据插入到合适的位置，完成排序。  
+- 插入排序实例：
+ ![图3-3 选择排序](https://github.com/baymux/JavaAlgorithm/blob/master/imgs/插入排序.jpg)
+```java 
+    static void insetSort(int[] a){
+        int i,j,t,h;
+        for (i = 0; i < a.length; i++) {
+            t = a[i];
+            j = i-1;
+            while  (j >= 0 && t < a[j]){
+                a[j+1] = a[j];
+                j--;
+            }
+            a[j+1] = t;
+
+            System.out.println("第" + i + "步排序的结果：");
+            for (h = 0; h < a.length; h++) {
+                System.out.print(" " + a[h]);
+            }
+            System.out.println();
+        }
+    }
+```
+  
  
