@@ -7,7 +7,7 @@ package algorithm.chapter3;
  **/
 public class InsertionSort {
     static final int SIZE = 10;
-    static void insetSort(int[] a){
+    static void insertSort(int[] a){
         int i,j,t,h;
         for (i = 0; i < a.length; i++) {
             t = a[i];
@@ -38,7 +38,7 @@ public class InsertionSort {
         }
         System.out.println();
 
-        insetSort(array);
+        insertSort(array);
 
         System.out.println("排序后的数组：");
         for (i = 0; i < SIZE; i++) {
