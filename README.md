@@ -292,7 +292,7 @@ Q: 一对两个月大的兔子以后每一个月都可以生一对小兔子，�
 - 插入排序实例：
  ![图3-3 选择排序](https://github.com/baymux/JavaAlgorithm/blob/master/imgs/插入排序.jpg)
 ```java 
-    static void insetSort(int[] a){
+    static void insertSort(int[] a){
         int i,j,t,h;
         for (i = 0; i < a.length; i++) {
             t = a[i];
